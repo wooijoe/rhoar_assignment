@@ -7,6 +7,7 @@ $ oc login --insecure-skip-tls-verify --server=https://master.na39.openshift.ope
 An existing project is already created called "freelancer-project"
 
 # Sample curl Requests
+```
 $ export projectName = freelancer-project
 $ export PROJECT_URL=http://$(oc get route project-service -n $projectName -o template --template='{{.spec.host}}')
 $ curl -X GET "$PROJECT_URL/projects"
@@ -23,3 +24,4 @@ $ curl -X GET "$GATEWAY_URL/gateway/projects/proj001"
 $ curl -X GET "$GATEWAY_URL/gateway/projects/status/open"
 $ curl -X GET "$GATEWAY_URL/gateway/freelancers"
 $ curl -X GET "$GATEWAY_URL/gateway/freelancers/fl01"
+```
