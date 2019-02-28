@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: List
+items:
+- apiVersion: v1
+  kind: ImageStream
+  metadata:
+    name: freelancer-service
+  spec:
+    tags:
+    - from:
+        kind: ImageStreamImage
+        name: freelancer-service@sha256:f58ff71f904ff6459f71699770bf646f6710843d40ae193053679d7479160cec
+        namespace: freelancer-project
+      name: latest
