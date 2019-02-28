@@ -1,0 +1,14 @@
+swarm:
+  jaeger:
+    service-name: gateway-service
+    reporter-log-spans: true
+    sampler-type: ratelimiting
+    sampler-parameter: 1
+application:
+  properties:
+    project:
+      service:
+        url: http://project-service-freelancer-project.apps.na39.openshift.opentlc.com
+    freelancer:
+      service:
+        url: http://freelancer-service-freelancer-project.apps.na39.openshift.opentlc.com
