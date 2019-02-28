@@ -1,0 +1,10 @@
+com\freelance\project\verticle\service\package-info.class
+com\freelance\project\verticle\service\ProjectServiceVertxProxyHandler.class
+com\freelance\project\model\Project.class
+com\freelance\project\api\ApiVerticle.class
+com\freelance\project\verticle\service\ProjectServiceImpl.class
+com\freelance\project\verticle\service\ProjectVerticle.class
+com\freelance\project\verticle\MainVerticle.class
+com\freelance\project\model\package-info.class
+com\freelance\project\verticle\service\ProjectService.class
+com\freelance\project\verticle\service\ProjectServiceVertxEBProxy.class
